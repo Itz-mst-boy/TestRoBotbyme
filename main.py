@@ -7,7 +7,7 @@ devu = Client(
     "devu",
     api_id=8884119,
     api_hash="d94fe90a1d7ee5ce6f36b20d4ca79280",
-    bot_token='5270362290:AAGIFRLpINGZX-v-CKOdlD-WV1X2g677f7g',
+    bot_token='5382418732:AAGSE1Ym7g7YT80OpqDft-QHZgTu0Oshdiw',
 )
 
 BUTTON = [
@@ -25,7 +25,7 @@ def starcmd(devu, message):
 @devu.on_message(filters.command('start') & filters.private)
 def command1(devu, message):
 	devu.delete_messages(message.chat.id, message.id)	
-	message.reply_text(f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}) 🥀\n\n I am basic info searcher bot made by `Mukesh`.\n\nType /getme to get your Info 🥀 \n\n Thank You ❤️")
+	message.reply_text(f"ʜᴇʟʟᴏ[{message.from_user.first_name}](tg://user?id={message.from_user.id}) 🥀\n\n ɪ  ᴀᴍ  ʙᴀsɪᴄ ɪɴғᴏ sᴇᴀʀᴄʜᴇʀ ʙᴏᴛ ᴍᴀᴅᴇ  byǫ `ᴍᴜᴋᴇsʜ @itz_mst_boy`.\n\nᴛʏᴘᴇs /getme ᴛᴏ  ɢᴇᴛ ʏᴏᴜʀ  ɪɴғᴏ 🥀 \n\n ᴛʜᴀɴᴋ  ʏᴏᴜ  ᴘʟᴢ ᴊᴏɪɴ @mr_sukkun❤️")
 	
 		
 @devu.on_message(filters.command('help'))
