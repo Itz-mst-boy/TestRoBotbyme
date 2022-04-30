@@ -25,7 +25,7 @@ def starcmd(devu, message):
 @devu.on_message(filters.command('start') & filters.private)
 def command1(devu, message):
 	devu.delete_messages(message.chat.id, message.id)	
-	message.reply_text(f"ʜᴇʟʟᴏ[{message.from_user.first_name}](tg://user?id={message.from_user.id}) 🥀\n\n ɪ  ᴀᴍ  ʙᴀsɪᴄ ɪɴғᴏ sᴇᴀʀᴄʜᴇʀ ʙᴏᴛ ᴍᴀᴅᴇ  byǫ `ᴍᴜᴋᴇsʜ @itz_mst_boy`.\n\nᴛʏᴘᴇs /getme ᴛᴏ  ɢᴇᴛ ʏᴏᴜʀ  ɪɴғᴏ 🥀 \n\n ᴛʜᴀɴᴋ  ʏᴏᴜ  ᴘʟᴢ ᴊᴏɪɴ @mr_sukkun❤️")
+	message.reply_text(f"ʜᴇʟʟᴏ[{message.from_user.first_name}](tg://user?id={message.from_user.id}) 🥀\n\n ɪ  ᴀᴍ  ʙᴀsɪᴄ ɪɴғᴏ sᴇᴀʀᴄʜᴇʀ ʙᴏᴛ ᴍᴀᴅᴇ  byǫ `ᴍᴜᴋᴇsʜ `.\n\nᴛʏᴘᴇs /getme ᴛᴏ  ɢᴇᴛ ʏᴏᴜʀ  ɪɴғᴏ 🥀 \n\n ᴛʜᴀɴᴋ  ʏᴏᴜ  ᴘʟᴢ ᴊᴏɪɴ @mr_sukkun❤️")
 	
 		
 @devu.on_message(filters.command('help'))
