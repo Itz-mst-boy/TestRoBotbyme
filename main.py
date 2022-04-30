@@ -12,13 +12,13 @@ devu = Client(
 
 BUTTON = [
     [
-      InlineKeyboardButton(text="Go in my Pm.", url='https://t.me/Banxinbot?start'),
+      InlineKeyboardButton(text="ɢᴏ ɪɴ ᴍʏ ᴘᴍ.", url='https://t.me/Banxinbot?start'),
     ],
 ]
 
 @devu.on_message(filters.command('start') & filters.group)
 def starcmd(devu, message):
-	message.reply_text("Hey Use me in my pm Go here 👇", reply_markup=InlineKeyboardMarkup(BUTTON))
+	message.reply_text("ʜᴇʏ  ᴜsᴇ ᴍᴇ ɪɴ ᴍʏ ᴘᴍ ɢᴏ ʜᴇʀᴇ 👇", reply_markup=InlineKeyboardMarkup(BUTTON))
 
 
 
@@ -30,7 +30,7 @@ def command1(devu, message):
 		
 @devu.on_message(filters.command('help'))
 def help(devu, message):
-	message.reply_text("Huh @trygoogle")	
+	message.reply_text("ʜᴜʜ  ᴄᴏɴᴛᴀᴄᴛ @itz_mst_boy")	
 
 BUTTUN = [
     [
@@ -43,34 +43,34 @@ BUTTUN = [
 @devu.on_message(filters.command('getme') & filters.private)
 def info(devu, message):
 	devu.delete_messages(message.chat.id, message.id)
-	message.reply_text('Ok Choose What You Want To Know About YourSelf 👇.', reply_markup=ReplyKeyboardMarkup(BUTTUN, one_time_keyboard=True, resize_keyboard=True))
+	message.reply_text('ᴏᴋ ᴄʜᴏᴏsᴇ ᴡʜᴀᴛ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴀʙᴏᴜᴛ ʏᴏᴜʀsᴇʟғ 👇.', reply_markup=ReplyKeyboardMarkup(BUTTUN, one_time_keyboard=True, resize_keyboard=True))
 	
 
 	
 @devu.on_message(filters.regex('UserID') & filters.private)
 def getuserid(devu, message):
 	devu.delete_messages(message.chat.id, message.id)
-	message.reply_text(f'Hey {message.from_user.first_name}\n\nYour Telegram UserID is `{message.from_user.id}`')
+	message.reply_text(f'ʜᴇʏ {message.from_user.first_name}\n\nʏᴏᴜʀ  ᴛᴇʟᴇɢʀᴀᴍ  ᴜsᴇʀɪᴅ ɪs  `{message.from_user.id}`')
 	
 @devu.on_message(filters.regex('UserInfo') & filters.private)
 def userinfo(devu, message):
 	devu.delete_messages(message.chat.id, message.id)
-	message.reply_text(f"""┈┈┈┈┈┈┈┈┈𑁍ࠬ┈┈┈┈┈
-Scanned By Telegram Detabase..
+	message.reply_text(f"""┈┈┈┈┈┈┈┈┈𑁍ࠬ┈┈┈┈┈@itz_mst_boy
+sᴄᴀɴɴᴇᴅ ʙʏ ᴛᴇʟᴇɢʀᴀᴍ  ᴅᴇᴛᴀʙᴀsᴇ ᴍᴏɪ ᴏᴡɴᴇʀ @itz_mst_boy..
 
-User Info 🥀
+ᴜsᴇʀ  ɪɴғᴏ  🥀
 
-First Name : `{message.from_user.first_name}`
+ғɪʀsᴛ  ɴᴀᴍᴇ  : `{message.from_user.first_name}`
 
-Last Name : `{message.from_user.last_name}`
+ʟᴀsᴛ ɴᴀᴍᴇ  : `{message.from_user.last_name}`
 
-User ID : `{message.from_user.id}`
+ᴜsᴇʀ ɪᴅ : `{message.from_user.id}`
 
-UserName : @{message.from_user.username}
+ᴜsᴇʀɴᴀᴍᴇ : @{message.from_user.username}
 
-Direct Link : [Link⚡](tg://user?id={message.from_user.id})
+ᴅɪʀᴇᴄᴛ ʟɪɴᴋ : [Link⚡](tg://user?id={message.from_user.id})
 
-Enjoy!!
+ᴇɴᴊᴏʏ @itz_mst_boy !!
 ┈┈┈┈┈𑁍ࠬ┈┈┈┈┈┈┈┈""")
 
 	
