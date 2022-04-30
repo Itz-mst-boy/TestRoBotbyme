@@ -55,8 +55,8 @@ def getuserid(devu, message):
 @devu.on_message(filters.regex('UserInfo') & filters.private)
 def userinfo(devu, message):
 	devu.delete_messages(message.chat.id, message.id)
-	message.reply_text(f"""┈┈┈┈┈┈┈┈┈𑁍ࠬ┈┈┈┈┈@itz_mst_boy
-sᴄᴀɴɴᴇᴅ ʙʏ ᴛᴇʟᴇɢʀᴀᴍ  ᴅᴇᴛᴀʙᴀsᴇ ᴍᴏɪ ᴏᴡɴᴇʀ @itz_mst_boy..
+	message.reply_text(f"""┈┈┈┈┈┈┈┈┈𑁍ࠬ┈┈┈┈┈
+sᴄᴀɴɴᴇᴅ ʙʏ ᴛᴇʟᴇɢʀᴀᴍ  ᴅᴀᴛᴀʙᴀsᴇ ᴍᴏɪ ᴏᴡɴᴇʀ @itz_mst_boy..
 
 ᴜsᴇʀ  ɪɴғᴏ  🥀
 
@@ -70,7 +70,8 @@ sᴄᴀɴɴᴇᴅ ʙʏ ᴛᴇʟᴇɢʀᴀᴍ  ᴅᴇᴛᴀʙᴀsᴇ ᴍᴏɪ ᴏ
 
 ᴅɪʀᴇᴄᴛ ʟɪɴᴋ : [Link⚡](tg://user?id={message.from_user.id})
 
-ᴇɴᴊᴏʏ @itz_mst_boy !!
+ᴇɴᴊᴏʏ  ʙʏ @itz_mst_boy 
+ ᴊᴏɪɴ:- @mukhushi_official!!
 ┈┈┈┈┈𑁍ࠬ┈┈┈┈┈┈┈┈""")
 
 	
