@@ -24,7 +24,7 @@ def starcmd(devu, message):
 
 @devu.on_message(filters.command('start') & filters.private)
 def command1(devu, message):
-	devu.delete_messages(message.chat.id, message.message_id)	
+	devu.delete_messages(message.chat.id, message.id)	
 	message.reply_text(f"Hello [{message.from_user.first_name}](tg://user?id={message.from_user.id}) 🥀\n\n I am basic info searcher bot made by `Mukesh`.\n\nType /getme to get your Info 🥀 \n\n Thank You ❤️")
 	
 		
@@ -42,19 +42,19 @@ BUTTUN = [
 
 @devu.on_message(filters.command('getme') & filters.private)
 def info(devu, message):
-	devu.delete_messages(message.chat.id, message.message_id)
+	devu.delete_messages(message.chat.id, message.id)
 	message.reply_text('Ok Choose What You Want To Know About YourSelf 👇.', reply_markup=ReplyKeyboardMarkup(BUTTUN, one_time_keyboard=True, resize_keyboard=True))
 	
 
 	
 @devu.on_message(filters.regex('UserID') & filters.private)
 def getuserid(devu, message):
-	devu.delete_messages(message.chat.id, message.message_id)
+	devu.delete_messages(message.chat.id, message.id)
 	message.reply_text(f'Hey {message.from_user.first_name}\n\nYour Telegram UserID is `{message.from_user.id}`')
 	
 @devu.on_message(filters.regex('UserInfo') & filters.private)
 def userinfo(devu, message):
-	devu.delete_messages(message.chat.id, message.message_id)
+	devu.delete_messages(message.chat.id, message.id)
 	message.reply_text(f"""┈┈┈┈┈┈┈┈┈𑁍ࠬ┈┈┈┈┈
 Scanned By Telegram Detabase..
 
