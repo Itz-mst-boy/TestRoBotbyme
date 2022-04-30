@@ -12,7 +12,7 @@ devu = Client(
 
 BUTTON = [
     [
-      InlineKeyboardButton(text="ɢᴏ ɪɴ ᴍʏ ᴘᴍ.", url='https://t.me/Banxinbot?start'),
+      InlineKeyboardButton(text="ɢᴏ ɪɴ ᴍʏ ᴘᴍ.", url='https://t.me/MoI_inFo_bOt?start'),
     ],
 ]
 
